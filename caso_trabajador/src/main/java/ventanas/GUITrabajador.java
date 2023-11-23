@@ -9,20 +9,24 @@ public class GUITrabajador extends JFrame implements ActionListener {
 
 	private JButton botonLeer;
 	private JButton botonEditar;
+	private JButton botonAgregar;
     public GUITrabajador(){
 		super("Ventana Trabajador");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(600, 400);
 
 		setLayout(new FlowLayout());
+		botonAgregar = new JButton("Agregar trabajador ");
 		botonLeer = new JButton("Leer Trabajador");
 		botonEditar = new JButton("Editar Trabajador");
 
 		botonEditar.addActionListener(this);
 		botonLeer.addActionListener(this);
+		botonAgregar.addActionListener(this);
 
 		add(botonLeer);
 		add(botonEditar);
+		add(botonAgregar);
 	}
 
 	@Override
