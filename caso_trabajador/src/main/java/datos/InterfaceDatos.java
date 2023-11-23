@@ -1,5 +1,4 @@
 package datos;
-
 import modelo.Trabajador;
 
 public interface InterfaceDatos {

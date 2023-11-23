@@ -13,7 +13,6 @@ public class DatosTrabajador implements InterfaceDatos {
       listaTrabajadores.add(trabajador);
       System.out.println("Trabajador agregado correctamente" + trabajador);
     }
-
     @Override
     public void editar(Trabajador trabajador) {
         if(existeTrabajador(trabajador.getRut())){
