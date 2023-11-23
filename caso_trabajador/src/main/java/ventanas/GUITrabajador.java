@@ -32,9 +32,17 @@ public class GUITrabajador extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == botonLeer) {
-			System.out.println("Boton leer apretado");
-		} else {
-			System.out.println(" Boton editar apretado");
+			ventanaLeer guiLeerTrabajador = new ventanaLeer();
+			guiLeerTrabajador.setVisible(true);
+
+		} else if (e.getSource() == botonEditar){
+			ventanaEditar guiEditarTrabajador = new ventanaEditar();
+			guiEditarTrabajador.setVisible(true);
+
+		}  else if (e.getSource() == botonAgregar) {
+
+			ventanaAgregar guiAgregarTrabajador = new ventanaAgregar();
+			guiAgregarTrabajador.setVisible(true);
 		}
 	}
 }
