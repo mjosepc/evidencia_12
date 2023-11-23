@@ -1,11 +1,13 @@
 package datos;
 
+import modelo.Trabajador;
+
 public interface InterfaceDatos {
 
-	void editar();
+	void editar(Trabajador trabajador);
 
-	void leer();
+	Trabajador leerTrabajador(String rut);
 
-	void agregar();
+	void agregar(Trabajador trabajador);
 
 }
